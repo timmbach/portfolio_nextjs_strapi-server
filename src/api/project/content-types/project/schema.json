@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectSnapshot": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "projectTitle": {
+      "type": "string"
+    },
+    "projectTech": {
+      "type": "component",
+      "repeatable": true,
+      "component": "technologies.technologies"
+    },
+    "projectDesc": {
+      "type": "text"
+    },
+    "projectUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "singularName": "experience",
+    "pluralName": "experiences",
+    "displayName": "experience",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "duties": {
+      "displayName": "duties",
+      "type": "component",
+      "repeatable": true,
+      "component": "duties.duties"
+    },
+    "tech": {
+      "displayName": "technologies",
+      "type": "component",
+      "repeatable": true,
+      "component": "technologies.technologies"
+    }
+  }
+}
